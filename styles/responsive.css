@@ -1,0 +1,5 @@
+@media (max-width: 400px) {
+    header div ul li {
+        font-size: 87%;
+    }
+}

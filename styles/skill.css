@@ -1,0 +1,85 @@
+main section#skills {
+    color: #fff;
+    margin-bottom: 8rem;
+}
+
+main section#skills h1 {
+    text-align: center;
+    font-size: 26pt;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main section#skills h1::after, main section#skills h1::before  {
+    content: '';
+    display: block;
+    padding: .01rem 1rem 0.01rem 1rem;
+    margin: 0 35px;
+    background: var(--verde); 
+}
+
+.stacks {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.stacks h3 {
+    padding: .25rem;
+}
+
+.front-end, .back-end, .banco-de-dados, .microcontroladores {
+    background-color: var(--preto);
+    border: 1px solid var(--verdeLight);
+    border-radius: 8px;
+    width: 300px;
+
+    transition: all .5s;
+    cursor: pointer;
+}
+
+.front-end, .back-end, .banco-de-dados, .microcontroladores {
+    padding: 1rem;
+    text-align: center;   
+}
+
+.front-end:hover, .back-end:hover, .banco-de-dados:hover, .microcontroladores:hover {
+    box-shadow: 0 6px 10px var(--verde);
+    transform: translateY(-10px);
+}
+
+.techs {
+    display: flex;
+    justify-content: center;
+    padding: .5rem;
+    gap: 20px;
+}
+
+.html {
+    color: #fe4a49;
+    font-weight: bold;
+}
+
+.angularJs {
+    color: #FF1818;
+    font-weight: bold;
+}
+
+.css {
+    color: #0DD8CE;
+    font-weight: bold;
+}
+
+.js, .sqlServer {
+    color: #f6f930;
+    font-weight: bold;
+}
+
+.csharpe {
+    color: #B810C7;
+    font-weight: bold;
+}
