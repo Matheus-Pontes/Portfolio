@@ -1,0 +1,63 @@
+main section#contato h1 {
+    text-align: center;
+    font-size: 26pt;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main section#contato h1::after, main section#contato h1::before  {
+    content: '';
+    display: block;
+    padding: .01rem 1rem 0.01rem 1rem;
+    margin: 0 35px;
+    background: var(--verde); 
+}
+
+section#contato p {
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+section#contato form {
+    display: flex;
+    flex-direction: column;
+    padding: 4rem;
+    margin: auto;
+    gap: 1rem;
+}
+
+section#contato form input {
+    padding: 1rem .5rem;
+    background-color: var(--preto);
+    border: 1px solid var(--verde);
+    color: #fff;
+    font-size: 1.25rem;
+}
+
+section#contato form textarea {
+    border: 1px solid var(--verde);
+    background-color: var(--preto);
+    color: #fff;
+    padding: .5rem;
+    font-size: 1.25rem;
+    resize: vertical;
+}
+
+section#contato form button {
+    background: var(--verde);
+    padding: 1rem .5rem;
+    border: none;
+    color: #fff;
+    font-size: 1.25rem; 
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+section#contato form button:hover {
+    opacity: .8;
+}
