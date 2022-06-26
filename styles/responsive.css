@@ -1,3 +1,9 @@
+@media (max-width: 600px) {
+    #sobreTexto p {
+        font-size: 67%;
+    }
+}
+
 @media (max-width: 400px) {
     header div ul li {
         font-size: 87%;
