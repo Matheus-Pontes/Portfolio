@@ -99,5 +99,20 @@ main section#projetos h1::after, main section#projetos h1::before  {
     background-color: var(--verdeLight);
 }
 
+#maisProjetos {
+    display: block;
+    width: 15rem;
+    padding: 1rem 2rem;
+    background-color: var(--preto);
+    border: 1px solid var(--verdeLight);
+    color: #fff;
+    margin: 50px auto;
+    border-radius: 4px;
+    text-align: center;
+    text-decoration: none;
+    transition: all .5s;
+}
 
-
+#maisProjetos:hover {
+    background-color: var(--verdeLight);
+}

@@ -1,5 +1,11 @@
 @media (max-width: 400px) {
-    header div ul li {
+    header div ul li, #sobreTexto p {
         font-size: 87%;
     }
+
+    #imgPerfil {
+        width: 200px;
+        height: 200px;
+    }
+    
 }

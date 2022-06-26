@@ -24,7 +24,7 @@ main section#skills h1::after, main section#skills h1::before  {
     display: flex;
     justify-content: center;
     margin-top: 50px;
-    gap: 50px;
+    gap: 20px;
     flex-wrap: wrap;
 }
 
@@ -55,31 +55,7 @@ main section#skills h1::after, main section#skills h1::before  {
 .techs {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     padding: .5rem;
     gap: 20px;
-}
-
-.html {
-    color: #fe4a49;
-    font-weight: bold;
-}
-
-.angularJs {
-    color: #FF1818;
-    font-weight: bold;
-}
-
-.css {
-    color: #0DD8CE;
-    font-weight: bold;
-}
-
-.js, .sqlServer {
-    color: #f6f930;
-    font-weight: bold;
-}
-
-.csharpe {
-    color: #B810C7;
-    font-weight: bold;
 }
