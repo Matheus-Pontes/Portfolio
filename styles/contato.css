@@ -1,20 +1,3 @@
-main section#contato h1 {
-    text-align: center;
-    font-size: 26pt;
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-main section#contato h1::after, main section#contato h1::before  {
-    content: '';
-    display: block;
-    padding: .01rem 1rem 0.01rem 1rem;
-    margin: 0 35px;
-    background: var(--verde); 
-}
-
 section#contato p {
     text-align: center;
     padding: 1rem;

@@ -19,8 +19,6 @@
 
 body {
     background: var(--pretoLight);
-    /* scroll-behavior: smooth; */
-    /* overflow-y: ; */
 }
 
 header {
@@ -93,4 +91,25 @@ footer figure a {
 footer figure img {
     width: 100%;
     height: 100%;
+}
+
+.titulo {
+    text-align: center;
+    font-size: 26pt;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 2rem;
+    color: #fff;
+}
+
+.titulo::after,
+.titulo::before  {
+    content: '';
+    display: block;
+    padding: .01rem 1rem 0.01rem 1rem;
+    margin: 0 35px;
+    background: var(--verde); 
 }

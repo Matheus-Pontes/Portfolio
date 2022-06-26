@@ -1,24 +1,3 @@
-
-main section#projetos h1 {
-    text-align: center;
-    font-size: 26pt;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    padding: 2rem;
-    color: #fff;
-}
-
-main section#projetos h1::after, main section#projetos h1::before  {
-    content: '';
-    display: block;
-    padding: .01rem 1rem 0.01rem 1rem;
-    margin: 0 35px;
-    background: var(--verde); 
-}
-
 .projetosCards {
     display: flex;
     justify-content: center;

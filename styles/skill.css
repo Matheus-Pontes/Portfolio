@@ -3,23 +3,6 @@ main section#skills {
     margin-bottom: 8rem;
 }
 
-main section#skills h1 {
-    text-align: center;
-    font-size: 26pt;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-main section#skills h1::after, main section#skills h1::before  {
-    content: '';
-    display: block;
-    padding: .01rem 1rem 0.01rem 1rem;
-    margin: 0 35px;
-    background: var(--verde); 
-}
-
 .stacks {
     display: flex;
     justify-content: center;
