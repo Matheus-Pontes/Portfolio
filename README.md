@@ -1,4 +1,4 @@
-# Portifolio
-Repositório para meu portifolio 
+# Portfólio
+Repositório para meu site portfólio 
 
-- Acessar portifolio: https://matheuspontes.vercel.app/
+- [Acessar portfólio](https://matheuspontes.vercel.app/)
