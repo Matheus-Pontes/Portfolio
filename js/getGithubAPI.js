@@ -44,16 +44,12 @@ const Enum_DataProjects = {
     },
 }
 
-
 async function getDataGithubAPI() {
     const data = await fetch('https://api.github.com/users/Matheus-Pontes/repos').then(response => response.json())
-    
     const projects = data.filter(item => item.name == Enum_Projects[item.name]);
-    console.log(projects);
+
     buildProjectCard(projects)
-
 }
-
 
 function buildProjectCard(projects) {
     const $projetosCards = document.querySelector('.projetosCards');
@@ -80,4 +76,3 @@ function buildProjectCard(projects) {
 }
 
 getDataGithubAPI();
-
