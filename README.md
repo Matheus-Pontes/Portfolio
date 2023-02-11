@@ -10,3 +10,8 @@ Repositório para meu site portfólio
 - HTML
 - CSS
 - JS 
+
+## Tasks 
+- [ ] Mudar o projeto para um projeto VueJS 3
+- [ ] Além do VueJs, adicionar TailwindCss
+- [ ] Fazer funcionar como já funciona kk
