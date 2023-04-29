@@ -12,6 +12,4 @@ Repositório para meu site portfólio
 - JS 
 
 ## Tasks 
-- [ ] Mudar o projeto para um projeto VueJS 3
-- [ ] Além do VueJs, adicionar TailwindCss
-- [ ] Fazer funcionar como já funciona kk
+- [ ] Micro-Interação com o usuário na parte das tecnologias - drag and drop entre os cards
