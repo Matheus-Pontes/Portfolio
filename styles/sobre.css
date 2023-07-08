@@ -20,6 +20,7 @@ main section#sobre {
     border-right: 1px solid #fefefefe;
     white-space: nowrap;
     overflow: hidden;
+    margin-bottom: 2rem;
 }
 
 /* Nome, animação de escrita =====*/
@@ -32,7 +33,7 @@ main section#sobre {
         width: 0;
     }
     to {
-        width: 8em;
+        width: 14em;
     }
 }
 
@@ -48,6 +49,7 @@ main section#sobre {
 #sobreTexto p {
     padding: .5rem 0;
     font-weight: normal;
+    line-height: 12px;
     text-align: justify;
     font-size: 14pt;
 }
