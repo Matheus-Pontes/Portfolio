@@ -7,7 +7,8 @@ main section#experiencias {
 .experiencia {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 2rem;
     flex-wrap: wrap;
 }
 
@@ -31,9 +32,13 @@ main section#experiencias {
     object-fit: contain;
 }
 
+.expDescricao {
+    flex: 1;
+}
+
 .expDescricao h3 {
-    text-align: center;
-    font-size: 16pt;
+    text-align: left;
+    font-size: 28pt;
     padding: .75rem;
 }
 

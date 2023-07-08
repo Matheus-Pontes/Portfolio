@@ -1,4 +1,4 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
 :root {
     --azul: #81d8f7;
@@ -8,16 +8,17 @@
 
     --preto: #09090a;
     --pretoLight: #121214;
-
-    --font-Space: font-family: 'Space Grotesk';
-    --font-Orbitron: font-family: 'Orbitron';
 }
 
 * {
     margin: 0;
     padding: 0;
-    font-family: var(--font-Orbitron);
+    font-family: 'Roboto';
     box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
@@ -43,9 +44,6 @@ header div {
     flex-wrap: wrap;
 }
 
-header div h1 {
-    font-family: var(--font-Orbitron) !important;
-}
 
 nav ul {
     display: flex;
