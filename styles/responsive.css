@@ -1,9 +1,3 @@
-@media (max-width: 1300px) {
-    main section#contato{
-        margin-top: 800px;
-    }
-}
-
 @media (max-width: 600px) {
     #sobreTexto p {
         font-size: 77%;
