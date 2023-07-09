@@ -3,7 +3,6 @@
     scroll-snap-type: x mandatory;
     overflow-x: auto;
     margin: 2rem;
-    padding-inline: 2rem;
     gap: 1rem;
 }
 
@@ -13,8 +12,6 @@
     gap: 1rem;
     width: 400px;
     border: 1px solid var(--verdeLight);
-    border-radius: 8px;
-    /* overflow: hidden; */
 }
 
 .figura-card {
