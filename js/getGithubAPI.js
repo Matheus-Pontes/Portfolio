@@ -56,18 +56,20 @@ function buildProjectCard(projects) {
 
     projects.forEach(project => {
         $projetosCards.innerHTML += 
-        `<div class="projeto">
-            <figure>
+        `<div class="card">
+            <figure class="figura-card">
                 <img src="${Enum_DataProjects[project.name].srcImg}" alt="${Enum_DataProjects[project.name].alt}">
             </figure>
-            <div class="descricao">
+            <div class="titulo-card">
                 <h3>${Enum_DataProjects[project.name].title}</h3>
+            </div>
+            <div class="descricao">
                 <p>${Enum_DataProjects[project.name].description}</p> 
-                <div class="buttons">
-                    ${Enum_DataProjects[project.name].link ? `<p><a href="${Enum_DataProjects[project.name].link}" target="_blank" class="acesso">Acessar</a></p>` : ''}
-                    
-                    <p><a href="${project.url}" target="_blank" class="repositorio">Repositório</a></p>  
-                </div>
+            </div>
+            <div class="buttons">
+                ${Enum_DataProjects[project.name].link ? `<a href="${Enum_DataProjects[project.name].link}" target="_blank" class="acesso-projeto">Acessar projeto</a>` : ''}
+                
+                <a href="${project.url}" target="_blank" class="acesso-repositorio">Repositório</a>
             </div>
         </div>`
         ;
