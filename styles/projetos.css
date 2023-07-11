@@ -1,9 +1,41 @@
 .projetosCards {
+    position: relative;
     display: flex;
     scroll-snap-type: x mandatory;
     overflow-x: auto;
     margin: 2rem;
     gap: 1rem;
+    padding-left: 1.25rem;
+}
+
+.projetosCards::-webkit-scrollbar {
+    display: none;
+}
+
+.div-left-scroll {
+    position: absolute;
+    top: 0;
+    left: 0rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.button-scroll {
+    border-radius: 50%;
+    padding: 1rem;
+    background: #000;
+    color: #fff;
+    border: 1px solid #00b37e;
+}
+
+.div-right-scroll {
+    position: absolute;
+    top: 0;
+    right: 0rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
 }
 
 .card {
