@@ -16,7 +16,7 @@
     <title>Matheus Francisco de Pontes</title>
 
     <script src="./js/getGithubAPI.js"></script>
-    
+    <script src="./js/index.js"></script>
 </head>
 <body>
     <header>
@@ -100,7 +100,24 @@
         </section>
         <section id="projetos">
             <h1 class="titulo">Projetos</h1>
-            <div class="projetosCards"></div>
+            <div class="relative slide-projetos">
+                <div class="projetosCards"></div>
+
+                <div class="div-left-scroll">
+                    <button class="button-scroll" data-action="prev">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" style="width: 1rem; height: 1rem;">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="div-right-scroll">
+                    <button class="button-scroll" aria-label="next" data-action="next">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" style="width: 1rem; height: 1rem;">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
                 
             <a href="https://github.com/Matheus-Pontes?tab=repositories" id="maisProjetos" target="_blank" tabindex="0">Mais projetos</a>
         </section>
@@ -176,7 +193,5 @@
         </div>
         <p>Desenvolvido por Matheus F. de Pontes</p>
     </footer>
-
-    <script src="./js/index.js"></script>
 </body>
 </html>

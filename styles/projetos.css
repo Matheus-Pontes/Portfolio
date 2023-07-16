@@ -1,11 +1,15 @@
-.projetosCards {
+.relative {
     position: relative;
+}
+
+.projetosCards {
     display: flex;
     scroll-snap-type: x mandatory;
     overflow-x: auto;
-    margin: 2rem;
     gap: 1rem;
     padding-left: 1.25rem;
+    transition: all .2s;
+    scroll-behavior: smooth;
 }
 
 .projetosCards::-webkit-scrollbar {
@@ -27,6 +31,7 @@
     background: #000;
     color: #fff;
     border: 1px solid #00b37e;
+    cursor: pointer;
 }
 
 .div-right-scroll {
@@ -44,6 +49,7 @@
     gap: 1rem;
     width: 400px;
     border: 1px solid var(--verdeLight);
+    border-radius: 8px;
 }
 
 .figura-card {
