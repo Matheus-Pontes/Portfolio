@@ -7,7 +7,7 @@
     scroll-snap-type: x mandatory;
     overflow-x: auto;
     gap: 1rem;
-    padding-left: 1.25rem;
+    padding-inline: 1.25rem;
     transition: all .2s;
     scroll-behavior: smooth;
 }
