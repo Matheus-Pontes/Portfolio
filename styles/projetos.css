@@ -45,9 +45,9 @@
 
 .card {
     display: grid;
+    width: 400px;
     grid-template-rows: max-content max-content 1fr max-content;
     gap: 1rem;
-    width: 400px;
     border: 1px solid var(--verdeLight);
     border-radius: 8px;
 }

@@ -15,6 +15,9 @@
     <link type="image/png" sizes="16x16" rel="icon" href="img/icons8-dev-16 (1).png">
     <title>Matheus Francisco de Pontes</title>
 
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
     <script src="./js/getGithubAPI.js"></script>
     <script src="./js/index.js"></script>
 </head>
@@ -103,16 +106,16 @@
             <div class="relative slide-projetos">
                 <div class="projetosCards"></div>
 
-                <div class="div-left-scroll">
+                <div class="div-left-scroll" id="prev" data-action="prev">
                     <button class="button-scroll" data-action="prev">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" style="width: 1rem; height: 1rem;">
+                        <svg data-action="prev" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" style="width: 1rem; height: 1rem;">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
                         </svg>
                     </button>
                 </div>
-                <div class="div-right-scroll">
+                <div class="div-right-scroll" id="next">
                     <button class="button-scroll" aria-label="next" data-action="next">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" style="width: 1rem; height: 1rem;">
+                        <svg data-action="next" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" style="width: 1rem; height: 1rem;">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
                         </svg>
                     </button>
@@ -174,24 +177,12 @@
         </section>
     </main>
     <footer>
-        <div>
-            <figure>
-                <a href="https://www.instagram.com/pontesm10/" target="_blank">
-                    <img src="https://img.icons8.com/fluency/48/000000/instagram-new.png" alt="icone instagram"/>
-                </a>
-            </figure>
-            <figure>
-                <a href="https://github.com/Matheus-Pontes" target="_blank">
-                    <img src="https://img.icons8.com/fluency/48/000000/github.png" alt="icone github"/>
-                </a>
-            </figure>
-            <figure>
-                <a href="https://www.linkedin.com/in/matheuspontes000/" target="_blank">
-                    <img src="https://img.icons8.com/fluency/48/FA5252/linkedin.png" alt="icone linkedin"/>
-                </a>
-            </figure>
-        </div>
-        <p>Desenvolvido por Matheus F. de Pontes</p>
+        <a href="https://github.com/Matheus-Pontes" target="_blank" title="Acesso ao meu github">
+            <ion-icon name="logo-github"></ion-icon>
+        </a>
+        <a href="https://www.linkedin.com/in/matheuspontes000/" target="_blank" title="Acesso ao meu linkedin">
+            <ion-icon name="logo-linkedin"></ion-icon>
+        </a>
     </footer>
 </body>
 </html>

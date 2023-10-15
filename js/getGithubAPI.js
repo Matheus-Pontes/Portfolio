@@ -40,7 +40,7 @@ const Enum_DataProjects = {
         alt: 'Tela onde tem um piano que se comunica com um microcontrolador',
         title: 'PianoWEB - ESP8266',
         description: 'Projeto realizado com HTML/CSS/JS - NodejS e C++(para microcontroladores). Onde, é simulado um piano a partir do clique em teclas especificas no teclado do computador e saindo o som no BUZZER ligado a um ESP8266(semelhante a um arduino, só que sendo possível conectar a internet). ',
-        link: 'https://github.com/Matheus-Pontes/PianoWebEsp8266'
+        link: ''
     },
 }
 
@@ -88,9 +88,11 @@ function controlCarousel() {
     const actionControlCarousel = {
         next() {
             projetosCarousel.scrollLeft += cardCarouselWidth;
+            controlVisibilityButtons(projetosCarousel.scrollLeft, "next");
         },
         prev() {
             projetosCarousel.scrollLeft -= cardCarouselWidth;
+            controlVisibilityButtons(projetosCarousel.scrollLeft, "prev");
         }
     };
 

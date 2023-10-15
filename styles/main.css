@@ -22,7 +22,10 @@ html {
 }
 
 body {
-    background: var(--preto);
+    background: 
+    linear-gradient(120deg, var(--verdeDark), var(--pretoLight) 100%) no-repeat,
+    linear-gradient(200deg, var(--verdeDark), var(--pretoLight) 40%) no-repeat,
+    linear-gradient(281deg, var(--verdeLight), var(--preto) 60%) no-repeat;
 }
 
 header {
@@ -68,35 +71,20 @@ nav ul li a {
 }
 
 footer {
-    background-color: var(--preto);
     padding: 1rem;
     color: #fff;
     margin-top: 300px;
     border-top: 1px solid var(--verdeLight);
     text-align: center;
-}
 
-footer div {
     display: flex;
+    align-items: center;
     justify-content: space-around;
+    font-size: 32px;
 }
 
-footer p {
-    margin-top: 20px;
-}
-
-footer figure {
-    width: 40px;
-    height: 40px;
-}
-
-footer figure a {
-    color: #fff;
-}
-
-footer figure img {
-    width: 100%;
-    height: 100%;
+footer ion-icon {
+    color: white;
 }
 
 .titulo {
@@ -118,4 +106,8 @@ footer figure img {
     padding: .01rem 1rem 0.01rem 1rem;
     margin: 0 35px;
     background: var(--verde); 
+}
+
+.hidden {
+    display: none;
 }
