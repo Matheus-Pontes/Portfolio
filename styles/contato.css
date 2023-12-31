@@ -1,7 +1,3 @@
-section#contato {
-    margin-top: 12rem;
-}
-
 section#contato p {
     text-align: center;
     padding: 1rem;
@@ -12,26 +8,37 @@ section#contato p {
 section#contato form {
     display: flex;
     flex-direction: column;
-    padding: 4rem;
-    margin: auto;
+    padding-inline: 4rem;
+    margin-top: 2rem;
     gap: 1rem;
+    max-width: 800px;
+    margin: auto;
 }
 
 section#contato form input {
     padding: 1rem .5rem;
-    background-color: var(--preto);
-    border: 1px solid var(--verde);
+    background-color: var(--pretoLight);
+    border: 2px solid #333;
     color: #fff;
     font-size: 1.25rem;
+    border-radius: 12px;
+    transition: all .3s ease;
 }
 
 section#contato form textarea {
-    border: 1px solid var(--verde);
-    background-color: var(--preto);
+    border: 2px solid #333;
+    background-color: var(--pretoLight);
     color: #fff;
     padding: .5rem;
     font-size: 1.25rem;
     resize: vertical;
+    border-radius: 12px;
+    transition: all .3s ease;
+}
+
+section#contato form input:hover,
+section#contato form textarea:hover {
+    border-color: var(--verde);
 }
 
 section#contato form button {
@@ -42,9 +49,31 @@ section#contato form button {
     font-size: 1.25rem; 
     border-radius: 4px;
     cursor: pointer;
-    transition: all .5s;
+    transition: all .3s ease;
 }
 
 section#contato form button:hover {
     opacity: .8;
+}
+
+.redes {
+    text-align: center;
+    gap: 4px;
+    font-size: 24px;
+    color: #fefe;
+    margin-block: 2rem;
+}
+
+.redes a {
+    text-decoration: none;
+}
+
+.redes .ph.ph-github-logo {
+    color: #fefe;
+    font-size: 64px;
+}
+
+.redes .ph.ph-linkedin-logo {
+    color: var(--azul);
+    font-size: 64px;
 }

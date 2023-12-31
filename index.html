@@ -14,175 +14,149 @@
     <link rel="stylesheet" href="./styles/main.css">
     <link type="image/png" sizes="16x16" rel="icon" href="img/icons8-dev-16 (1).png">
     <title>Matheus Francisco de Pontes</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-
-    <script src="./js/getGithubAPI.js"></script>
-    <script src="./js/index.js"></script>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
 </head>
 <body>
-    <header>
-        <div>
-            <h1>DevPontes</h1>
-            <nav>
-                <ul>
-                    <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projetos">Projetos</a></li>
-                    <li><a href="#experiencias">Experiências</a></li>
-                    <li><a href="#contato">Contato</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-    <main>
-        <section id="sobre">
-            <figure id="imgPerfil">
-                <img src="https://github.com/Matheus-Pontes.png" alt="Minha foto de perfil.">
-            </figure>
-
-            <div id="sobreTexto">
-                <h1 class="typing-animation">Matheus Pontes</h1>
-                <p>
-                    Atualmente sou Desenvolvedor de Software Jr. na empresa INTERTOX. No foco do desenvolvimento Front-End.
-                    Estou no 6º semestre de ciências da computação, formado pelo Senai-SP como técnico em eletrônica. 
-                    Gosto de desconectar com F1, animes, filmes, séries e saídas noturnas aos finais de semana.
-                </p>
-            </div>
-        </section>
-        <section id="skills">
-            <h1 class="titulo">Stacks</h1>
-            <div class="stacks">
-                <div class="front-end">
-                    <h3>Front-End</h3>
-                    <div class="techs">
-                        <figure class="html">
-                            <img src="https://img.icons8.com/color/48/000000/html-5--v1.png"/>
+    
+    <div class="box">
+        <div class="slide-secoes">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <section id="sobre">
+                        <figure id="imgPerfil">
+                            <img src="https://github.com/Matheus-Pontes.png" alt="Minha foto de perfil.">
                         </figure>
-                        <figure class="css">
-                            <img src="https://img.icons8.com/color/48/000000/css3.png"/>
-                        </figure>
-                        <figure class="js">
-                            <img src="https://img.icons8.com/fluency/48/000000/javascript.png"/>
-                        </figure>
-                        <figure class="angularJs">
-                            <img src="https://img.icons8.com/color/48/000000/angularjs.png"/>
-                        </figure>
-                        <figure class="reactjs">
-                            <img src="https://img.icons8.com/color/48/000000/react-native.png"/>
-                        </figure>
-                    </div>
-                </div>
-                <div class="back-end">
-                    <h3>Back-End</h3>
-                    <div class="techs">
-                        <figure class="csharpe">
-                            <img src="https://img.icons8.com/color/48/000000/c-sharp-logo.png"/>
-                        </figure>
-                    </div>
-                </div>
-                <div class="banco-de-dados">
-                    <h3>Banco de dados</h3>
-                    <div class="techs">
-                        <figure class="sqlServer">
-                            <img src="https://img.icons8.com/color/48/000000/microsoft-sql-server.png"/>
-                        </figure>
-                    </div>
-                </div>
-                <div class="microcontroladores">
-                    <h3>Micro controladores</h3>
-                    <div class="techs">
-                        <figure>
-                            <img src="https://img.icons8.com/fluency/48/000000/arduino.png"/>
-                        </figure>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="projetos">
-            <h1 class="titulo">Projetos</h1>
-            <div class="relative slide-projetos">
-                <div class="projetosCards"></div>
-
-                <div class="div-left-scroll" id="prev" data-action="prev">
-                    <button class="button-scroll" data-action="prev">
-                        <svg data-action="prev" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" style="width: 1rem; height: 1rem;">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
-                        </svg>
-                    </button>
-                </div>
-                <div class="div-right-scroll" id="next">
-                    <button class="button-scroll" aria-label="next" data-action="next">
-                        <svg data-action="next" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" style="width: 1rem; height: 1rem;">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-                        </svg>
-                    </button>
-                </div>
-            </div>
-                
-            <a href="https://github.com/Matheus-Pontes?tab=repositories" id="maisProjetos" target="_blank" tabindex="0">Mais projetos</a>
-        </section>
-        <section id="experiencias">
-            <h1 class="titulo">Experiências</h1>
-            <div class="experiencia">
-                <div>
-                    <figure>
-                        <img src="img/Logo-intertox-cor.png.webp" alt="Logo da empresa Intertox. Lembra um desenho de um hexagono ligados um a um.">
-                    </figure>
-                </div>
-                <div class="expDescricao">
-                    <h3>Desenvolvedor de Software Junior</h3>
-                    <p>
-                        <strong>Período: Fevereiro de 2023, até presente momento</strong>
-                    </p>
-
-                    <p>Estou indo para o segundo ano na empresa INTERTOX</p>
-                    <p>Trabalhando na implementação de novas funcionalidades e na correção de bugs</p>
-                    <p>Meu foco é no desenvolvimento FRONT-END. Mantendo tambem, os estudos do back-end caso precise e assim não ter 
-                        muita dificuldade.
-                    </p>
                     
-                    <p>Tarefas:</p>
-                    <ul>
-                        <li>Correção de bugs</li>
-                        <li>Implementação de novas funcionalidades</li>
-                    </ul>
-                    <p>Tecnologias: </p>
-                    <ul>
-                        <li>HTML • CSS • JS • JQuery • AngularJS • Tailwindcss</li>
-                        <li>C# • .NET 6</li>
-                        <li>SQL SERVER</li>
-                    </ul>
+                        <div id="sobreTexto">
+                            <h1 class="typing-animation">Matheus Pontes</h1>
+                            <p>
+                                Sou desenvolvedor front-end.
+                                Estou no 7º semestre de ciências da computação, sou formado pelo Senai-SP como técnico em eletrônica. 
+                                Pretendendo especializar na área e tambêm aprender um pouco sobre UI/UX para o futuro.
+                                Gosto de assistir séries e filmes, o futebol e basquete não podem falta e por fim, viagens.
+                            </p>
+                        </div>
+                    </section>
+                </div>
+                <div class="swiper-slide">
+                    <section id="skills">
+                        <div class="grid">
+                            <div class="frontend">
+                              <p>Front-end</p>
+                              <div>
+                                  <figure class="html">
+                                      <img src="https://img.icons8.com/color/48/000000/html-5--v1.png"/>
+                                  </figure>
+                                  <figure class="css">
+                                      <img src="https://img.icons8.com/color/48/000000/css3.png"/>
+                                  </figure>
+                                  <figure class="js">
+                                      <img src="https://img.icons8.com/fluency/48/000000/javascript.png"/>
+                                  </figure>
+                                  <figure class="angularJs">
+                                      <img src="https://img.icons8.com/color/48/000000/angularjs.png"/>
+                                  </figure>
+                                  <figure class="reactjs">
+                                      <img src="https://img.icons8.com/color/48/000000/react-native.png"/>
+                                  </figure>
+                              </div>
+                            </div>  
+                            <div class="backend">
+                              <p>Backend</p>
+                              <div>
+                                <figure class="csharpe">
+                                    <img src="https://img.icons8.com/color/48/000000/c-sharp-logo.png"/>
+                                </figure>
+                              </div>
+                            </div>  
+                            <div class="bancodedados">
+                              <p>Banco de dados</p>
+                              <div>
+                                <figure class="sqlServer">
+                                    <img src="https://img.icons8.com/color/48/000000/microsoft-sql-server.png"/>
+                                </figure>
+                              </div>
+                            </div>  
+                            <div class="microcontrolador">
+                              <p>Microntroladores</p>
+                              <div>
+                                <figure>
+                                    <img src="https://img.icons8.com/fluency/48/000000/arduino.png"/>
+                                </figure>
+                              </div>
+                            </div>  
+                        </div>
+                    </section>
+                </div>
+                <div class="swiper-slide">
+                    <section id="projetos">
+                        
+                    
+                        <div class="maisProjetos">
+                            <a href="https://github.com/Matheus-Pontes?tab=repositories" id="maisProjetos" target="_blank" tabindex="0">Mais projetos</a>
+                        </div>
+                    </section>
+                </div>
+                <div class="swiper-slide">
+                    <section id="experiencias">
+                        
+                    </section>
+                </div>
+                <div class="swiper-slide">
+                    <section id="contato">
+                        <div class="redes">
+                            <a href="https://github.com/Matheus-Pontes" target="_blank" title="Acesso ao github">
+                                <i class="ph ph-github-logo"></i>
+                            </a>
+                            
+                            <a href="https://www.linkedin.com/in/matheuspontes000/" target="_blank" title="Acesso ao linkedin">
+                                <i class="ph ph-linkedin-logo"></i>
+                            </a>
+                        </div>
+                        <form action="https://formsubmit.co/0b49e3f4964a982bd9efa15014b93319" method="POST">
+                            <input type="hidden" name="_next" value="https://matheuspontes.vercel.app/sucesso.html">
+                            <input type="text" name="name" placeholder="Nome">
+                            <input type="emal" name="email" placeholder="E-mail">
+                            <input type="text" name="subject" placeholder="Assunto">
+                            <textarea name="message" placeholder="Mensagem" id="mensagem"></textarea>
+                            <button type="submit">Enviar</button>
+                        </form>
+                    </section>
                 </div>
             </div>
-            <div class="line"></div>
-        </section>
-        <section id="contato">
-            <h1 class="titulo">Contato</h1>
-            <p>Caso queira entrar em contato para contrato ou projetos freelancer envie sua mensagem. 
-                Onde o mais breve irei te retornar.
-            </p>
+        </div>
 
-            <form action="https://formsubmit.co/0b49e3f4964a982bd9efa15014b93319" method="POST">
-                <input type="hidden" name="_next" value="https://matheuspontes.vercel.app/sucesso.html">
-                <input type="text" name="name" placeholder="Nome">
-                <input type="emal" name="email" placeholder="E-mail">
-                <input type="text" name="subject" placeholder="Assunto">
-                <textarea name="message" placeholder="Mensagem" id="mensagem"></textarea>
-                <button type="submit">Enviar</button>
-            </form>
+        <div class="slide-thumbnail">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <i class="ph ph-user-circle"></i>
+                    <span>Sobre</span>
+                </div>
+                <div class="swiper-slide">
+                    <i class="ph ph-atom"></i>
+                    <span>Habilidades</span>  
+                </div>
+                <div class="swiper-slide">
+                    <i class="ph ph-codepen-logo"></i>
+                    <span>Projetos</span>    
+                </div>
+                <div class="swiper-slide">
+                    <i class="ph ph-briefcase"></i>
+                    <span>Carreira</span>    
+                </div>
+                <div class="swiper-slide">
+                    <i class="ph ph-envelope-simple"></i>
+                    <span>Contato</span>
+                </div>
+            </div>
+        </div>
+    </div>
 
-        </section>
-    </main>
-    <footer>
-        <a href="https://github.com/Matheus-Pontes" target="_blank" title="Acesso ao meu github">
-            <ion-icon name="logo-github"></ion-icon>
-        </a>
-        <a href="https://www.linkedin.com/in/matheuspontes000/" target="_blank" title="Acesso ao meu linkedin">
-            <ion-icon name="logo-linkedin"></ion-icon>
-        </a>
-    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    
+    <script src="js/index.js"></script>
 </body>
 </html>
