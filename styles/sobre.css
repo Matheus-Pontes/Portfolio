@@ -17,7 +17,6 @@ section#sobre {
     border-right: 1px solid #fefefefe;
     white-space: nowrap;
     overflow: hidden;
-    margin-bottom: 2rem;
 }
 
 /* Nome, animação de escrita =====*/
@@ -67,6 +66,29 @@ section#sobre {
 }
 
 #imgPerfil img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.perfil {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 2rem;
+}
+
+.perfil #imgPerfilResponsivo {
+    width: 50px;
+    height: 50px;
+    padding: .25rem;
+    border-radius: 50%;
+    border: 1px solid var(--verdeLight);
+    box-shadow: 0 0 12px var(--verde);
+    display: none;
+}
+
+.perfil #imgPerfilResponsivo img {
     width: 100%;
     height: 100%;
     border-radius: 50%;

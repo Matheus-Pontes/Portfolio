@@ -1,11 +1,68 @@
-@media (min-width: 1300px) {
-    .figura-card {
-        width: 100%;
-        overflow: hidden;
+@media (max-width: 748px) {
+    #sobre #imgPerfil, #sobre #imgPerfil img {
+       display: none;
+    }
+    
+    .perfil #imgPerfilResponsivo {
+        display: block;
+        transition: all .5s ease;
+    }
+
+    .slide-thumbnail {
+        width: 100vw !important;
+    }
+    .slide-thumbnail .swiper-wrapper {
+        gap: 8px;
+    }
+
+    .swiper-slide.swiper-slide-visible.swiper-slide-fully-visible {
+        margin-right: 0px !important;
+    }
+
+    .grid {
+       display: flex;
+       flex-direction: column;
+    }
+
+    .grid img {
+        width: 50%;
+    }
+
+    .grid .frontend:hover {
+        transform: scale(1.1) translate(0px, 0);
+        box-shadow: 4px 4px 48px var(--verde);
+    }
+
+    .grid .bancodedados {
+        background-color: var(--pretoLight);
+    }
+
+    .grid .backend:hover {
+        transform: scale(1.1) translate(0px, 0);
+        box-shadow: 4px 4px 48px var(--verde);
+    }
+    
+    .grid .bancodedados:hover {
+        transform: scale(1.1) translate(0px, 0);
+        box-shadow: 4px 4px 48px var(--verde);
+    }
+
+    .grid .microcontrolador {
+        background-color: var(--preto);
+    }
+
+    .grid .microcontrolador:hover {
+        transform: scale(1.1) translate(0px, 0);
+        box-shadow: 4px 4px 48px var(--verde);
+    }
+
+    .grid .frontend, .grid .backend, .grid .bancodedados, .grid .microcontrolador {
+        padding: 1.5rem;
+        border: none;
     }
 }
 
-@media (max-width: 1300px) {
+/* @media (max-width: 1300px) {
     main section#contato{
         margin-top: 400px;
     }
@@ -30,4 +87,4 @@
         width: 200px;
         height: 200px;
     }
-}
+} */
