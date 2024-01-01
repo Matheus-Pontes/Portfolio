@@ -1,132 +1,106 @@
-.relative {
+section#projetos {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 50px;
+    gap: 32px;
     position: relative;
 }
 
-.projetosCards {
-    display: flex;
-    scroll-snap-type: x mandatory;
-    overflow-x: auto;
-    gap: 1rem;
-    padding-inline: 1.25rem;
-    transition: all .2s;
-    scroll-behavior: smooth;
-}
-
-.projetosCards::-webkit-scrollbar {
-    display: none;
-}
-
-.div-left-scroll {
-    position: absolute;
-    top: 0;
-    left: 0rem;
-    height: 100%;
-    display: flex;
-    align-items: center;
-}
-
-.button-scroll {
-    border-radius: 50%;
-    padding: 1rem;
-    background: #000;
-    color: #fff;
-    border: 1px solid #00b37e;
-    cursor: pointer;
-}
-
-.div-right-scroll {
-    position: absolute;
-    top: 0;
-    right: 0rem;
-    height: 100%;
-    display: flex;
-    align-items: center;
-}
-
 .card {
-    display: grid;
-    width: 400px;
-    grid-template-rows: max-content max-content 1fr max-content;
-    gap: 1rem;
-    border: 1px solid var(--verdeLight);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    perspective: 2500px;
+    width: 200px;
+    height: 300px;
+}
+
+.card span {
+    color: #fefe;
+    line-height: 150%;
+    font-size: 24px;
+    text-align: center;
+    display: block;
+}
+
+.card-wrapper {
     border-radius: 8px;
-}
-
-.figura-card {
-    width: 300px;
-    height: 200px;
-}
-
-.figura-card img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
+    border: 2px solid var(--verde);
+    transition: all 0.5s;
+    position: absolute;
+    z-index: -1;
+    overflow: hidden;
 }
 
-.titulo-card {
-    margin-top: 8px;
-    color: #fefefe;
-    text-align: center;
-    padding: 0 2rem;
+.card:hover .card-wrapper {
+    transform: perspective(900px) translateY(-5%) rotateX(25deg) translateZ(0);
+    box-shadow: 2px 35px 32px -8px var(--verdeLight);
+    -webkit-box-shadow: 2px 35px 32px -8px var(--verdeLight);
+    -moz-box-shadow: 2px 35px 32px -8px var(--verdeLight);
+}
+
+.card-wrapper img {
     width: 100%;
+    height: 80px;
+    object-fit: cover;
 }
 
-.descricao {
-    color: #fefefe;
-    text-align: justify;
-    margin: auto;
-    
-    padding: 0 2rem;
+.card-wrapper h2, .card-wrapper p {
+    padding: .5rem;
+    color: #fefe;
 }
 
-.buttons {
+.card-acesse-projeto {
+    width: 100%;
+    opacity: 0;
+    transition: all 0.5s;
     display: flex;
-    justify-content: flex-end;
-    gap: .55rem;
-
-    padding: .55rem;
-}
-
-.acesso-projeto, .acesso-repositorio {
-    display: block;
-    text-decoration: none;
-    padding: .55rem .45rem; 
-    border: 1px solid var(--verdeLight);
+    flex-direction: column;
+    gap: 8px;
+    justify-content: end;
+    align-items: center;
+    position: absolute;
+    z-index: -1;
     border-radius: 8px;
-    color: #fefefe;
-    background-color: transparent;
-    cursor: pointer;
-    transition: all .2s;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fefe;
 }
 
-.acesso-projeto {
-    background-color: var(--verdeLight);
+
+.card-acesse-projeto div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    padding: .5rem;
+    margin-bottom: 4px;
 }
 
-.acesso-projeto:hover {
-    opacity: .8;
+.card-acesse-projeto div a {
+    text-decoration: none;
+    text-align: center;
+    color: #fefe;
+    background-color: var(--verde);
+    border-radius: 8px;
+    padding: .25rem .35rem;
 }
 
-.acesso-repositorio:hover {
-    background-color: var(--verdeLight);
+.card:hover .card-acesse-projeto {
+    opacity: 1;
+    transform: translate3d(0%, -50%, 100px);
 }
-
 
 #maisProjetos {
-    display: block;
-    width: 15rem;
-    padding: 1rem 2rem;
-    background-color: var(--verde);
-    color: #fff;
-    margin: 50px auto;
-    border-radius: 4px;
-    text-align: center;
     text-decoration: none;
-    transition: all .5s;
+    color: #fefe;
+
+    position: absolute;
+    top: 73%;
 }
 
-#maisProjetos:hover {
-    background-color: var(--verdeLight);
-}

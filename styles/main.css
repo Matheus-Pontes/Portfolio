@@ -22,92 +22,59 @@ html {
 }
 
 body {
-    background: 
-    linear-gradient(120deg, var(--verdeDark), var(--pretoLight) 100%) no-repeat,
+    background: var(--preto); 
+    /* linear-gradient(120deg, var(--verdeDark), var(--pretoLight) 100%) no-repeat,
     linear-gradient(200deg, var(--verdeDark), var(--pretoLight) 40%) no-repeat,
-    linear-gradient(281deg, var(--verdeLight), var(--preto) 60%) no-repeat;
-}
-
-header {
-    padding: 1rem;
-    color: #fff;
-    background-color: transparent;
-    backdrop-filter: blur(18px);
-    width: 100%;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    border-bottom: 1px solid var(--verdeLight);
-}
-
-header div {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-
-nav ul {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
- 
-nav ul li {
-    list-style: none;
-    padding: .7rem;
-    font-weight: bold;
-    font-size: 12pt;
-}
-
-nav ul li:hover {
-    transform: scale(1.2);
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #fff;
-}
-
-footer {
-    padding: 1rem;
-    color: #fff;
-    margin-top: 300px;
-    border-top: 1px solid var(--verdeLight);
-    text-align: center;
-
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    font-size: 32px;
-}
-
-footer ion-icon {
-    color: white;
-}
-
-.titulo {
-    text-align: center;
-    font-size: 26pt;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    padding: 2rem;
-    color: #fff;
-}
-
-.titulo::after,
-.titulo::before  {
-    content: '';
-    display: block;
-    padding: .01rem 1rem 0.01rem 1rem;
-    margin: 0 35px;
-    background: var(--verde); 
+    linear-gradient(281deg, var(--verdeLight), var(--preto) 60%) no-repeat; */
 }
 
 .hidden {
     display: none;
+}
+
+.box {
+    height: 100vh;
+    position: relative;
+    width: 100%;
+    overflow: hidden
+}
+.slide-images > .swiper-wrapper > .swiper-slide {
+    height: 100vh;
+}
+
+.slide-thumbnail {
+    position: absolute;
+    bottom: 30px;
+    z-index: 2;
+    width: 900px;
+    transform: translateX(-50%);
+    left: 50%;
+    overflow: hidden;
+}
+
+.slide-thumbnail .swiper-slide {
+    padding: 2rem;
+    border-radius: 12px;
+    background: var(--pretoLight);
+    color: #fefefe;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    transition: all .3s ease;
+}
+
+.slide-thumbnail .swiper-slide span {
+    display: none;
+}
+
+.slide-thumbnail .swiper-slide:hover span {
+    display: block;
+    position: absolute;
+    bottom: 4px;
+    font-size: 12px;
+}
+
+.swiper-slide-thumb-active {
+    border-top: 3px solid var(--azul);
 }
