@@ -79,3 +79,29 @@ section#skills {
     align-items: center;
     gap: 8px;
 }
+
+
+.html, .css, .js, .angularjs, .reactjs,
+.csharpe, .sqlServer, .arduino {
+    position: relative;
+}
+
+.html span, .css span, .js span, .angularjs span, .reactjs span,
+.csharpe span, .sqlServer span, .arduino span {
+    position: absolute;
+    background-color: var(--pretoLight);
+    border: 2px solid #333;
+    color: #fefe;
+    padding: 0.25rem;
+    top: -22px;
+    left: 36px;
+    width: max-content;
+    font-size: 12px;
+    display: none;
+}
+
+.html:hover span, .css:hover span, .js:hover span, 
+.angularjs:hover span, .reactjs:hover span, .csharpe:hover span,
+.sqlServer:hover span, .arduino:hover span {
+    display: block;
+}
