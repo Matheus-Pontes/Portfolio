@@ -104,4 +104,5 @@ section#skills {
 .angularjs:hover span, .reactjs:hover span, .csharpe:hover span,
 .sqlServer:hover span, .arduino:hover span {
     display: block;
+    box-shadow: 0px 2px 4px var(--verde);
 }
