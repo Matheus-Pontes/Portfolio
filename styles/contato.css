@@ -1,64 +1,24 @@
-section#contato p {
-    text-align: center;
-    padding: 1rem;
-    font-size: 1.5rem;
-    color: #fff;
-}
-
-section#contato form {
+#contato {
+    height: 100vh;
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
-    padding-inline: 4rem;
-    margin-top: 2rem;
-    gap: 1rem;
-    max-width: 800px;
-    margin: auto;
+    padding-bottom: 50px;
 }
 
-section#contato form input {
-    padding: 1rem .5rem;
-    background-color: var(--pretoLight);
-    border: 2px solid #333;
-    color: #fff;
-    font-size: 1.25rem;
-    border-radius: 12px;
-    transition: all .3s ease;
-}
-
-section#contato form textarea {
-    border: 2px solid #333;
-    background-color: var(--pretoLight);
-    color: #fff;
-    padding: .5rem;
-    font-size: 1.25rem;
-    resize: vertical;
-    border-radius: 12px;
-    transition: all .3s ease;
-}
-
-section#contato form input:hover,
-section#contato form textarea:hover {
-    border-color: var(--verde);
-}
-
-section#contato form button {
-    background: var(--verde);
-    padding: 1rem .5rem;
-    border: none;
-    color: #fff;
-    font-size: 1.25rem; 
-    border-radius: 4px;
-    cursor: pointer;
-    transition: all .3s ease;
-}
-
-section#contato form button:hover {
-    opacity: .8;
+#contato h1 {
+    color: #fefefe;
+    font-weight: normal;
+    line-height: 250%;
 }
 
 .redes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    gap: 4px;
+    gap: 24px;
     font-size: 24px;
     color: #fefe;
     margin-block: 2rem;
@@ -71,9 +31,56 @@ section#contato form button:hover {
 .redes .ph.ph-github-logo {
     color: #fefe;
     font-size: 64px;
+    display: block;
+    border-radius: 12px;
+    padding: .25rem;
+    transition: all .4s;
 }
 
 .redes .ph.ph-linkedin-logo {
     color: var(--azul);
     font-size: 64px;
+    display: block;
+    border-radius: 12px;
+    padding: .25rem;
+    transition: all .4s;
+}
+
+.redes .ph.ph-whatsapp-logo {
+    color: var(--verdeLight);
+    font-size: 64px;
+    display: block;
+    border-radius: 12px;
+    padding: .25rem;
+    transition: all .4s;
+}
+
+.redes .ph.ph-instagram-logo {
+    color: pink;
+    font-size: 64px;
+    display: block;
+    border-radius: 12px;
+    padding: .25rem;
+    transition: all .4s;
+}
+
+.redes .ph.ph-github-logo:hover, .redes .ph.ph-linkedin-logo:hover,
+.redes .ph.ph-whatsapp-logo:hover, .redes .ph.ph-instagram-logo:hover {
+    transform: translateY(-15px);
+}
+
+.redes .ph.ph-github-logo:hover {
+    box-shadow: 0px 12px 8px #fefe;
+}
+
+.redes .ph.ph-linkedin-logo:hover {
+    box-shadow: 0px 12px 8px var(--azul);
+}
+
+.redes .ph.ph-whatsapp-logo:hover {
+    box-shadow: 0px 12px 8px var(--verdeLight);
+}
+
+.redes .ph.ph-instagram-logo:hover {
+    box-shadow: 0px 12px 8px pink;
 }
