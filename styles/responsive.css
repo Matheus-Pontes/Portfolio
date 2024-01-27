@@ -1,13 +1,16 @@
 @media (max-width: 748px) {
-    #sobre #imgPerfil, #sobre #imgPerfil img {
-       display: none;
-    }
-    
-    .perfil #imgPerfilResponsivo {
-        display: block;
-        transition: all .5s ease;
+    #sobre .perfil {
+       flex-direction: column;
     }
 
+    #sobre .perfil h1 {
+        font-size: 32px;
+    }
+    
+    #sobre .descricao {
+        font-size: 16px;
+    }
+    
     .slide-thumbnail {
         width: 100vw !important;
     }
@@ -19,6 +22,27 @@
         margin-right: 0px !important;
     }
 
+    /* Projetos */
+    #projetos {
+        padding: 2rem;
+    }    
+
+    #projetos > div {
+        height: 100%;
+        width: 100%;
+        flex-direction: column;
+        overflow: scroll;    
+    }
+
+    #projetos > div > .card {
+        width: 100%;
+    }
+
+    #maisProjetos {
+        top: 1%;
+    }
+
+    /* Skills */
     .grid {
        display: flex;
        flex-direction: column;
@@ -60,31 +84,9 @@
         padding: 1.5rem;
         border: none;
     }
-}
 
-/* @media (max-width: 1300px) {
-    main section#contato{
-        margin-top: 400px;
+    .swiper-wrapper {
+
     }
 }
 
-@media (max-width: 600px) {
-    #sobreTexto p {
-        font-size: 77%;
-    }
-}
-
-@media (max-width: 400px) {
-    header div ul li {
-        font-size: 87%;
-    }
-
-    #sobreTexto p {
-        font-size: 67%;
-    }
-
-    #imgPerfil {
-        width: 200px;
-        height: 200px;
-    }
-} */
