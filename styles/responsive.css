@@ -31,7 +31,6 @@
         height: 100%;
         width: 100%;
         flex-direction: column;
-        overflow: scroll;    
     }
 
     #projetos > div > .card {
@@ -83,10 +82,6 @@
     .grid .frontend, .grid .backend, .grid .bancodedados, .grid .microcontrolador {
         padding: 1.5rem;
         border: none;
-    }
-
-    .swiper-wrapper {
-
     }
 }
 
