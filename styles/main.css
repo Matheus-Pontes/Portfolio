@@ -99,3 +99,394 @@ body {
     
     bottom: 0px;
 }
+
+#sobre {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 50px;
+    gap: 48px;
+}
+
+#sobre h1 {
+    color: #fefefe;
+    font-size: 48px;
+    line-height: 150%;
+    font-weight: bold;
+    position: relative;
+    -webkit-text-stroke: 0.1vw #fefefe;
+    animation: animaNome 6s linear infinite;
+}
+
+@keyframes animaNome {
+    0%, 40%, 100%
+    {
+        color: var(--preto);
+    }
+
+    70%, 90% 
+    {
+        color: #fefefe;
+    }
+}
+
+#sobre .perfil a {
+    color: #ddd;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#sobre .perfil a:hover {
+    text-decoration: underline;
+    color: var(--azul); 
+}
+
+.perfil {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+}
+
+.perfil p {
+    line-height: 150%;
+    color: #eee;
+    font-weight: bold;
+}
+
+#imgPerfil {
+    width: 150px;
+    height: 150px;
+    padding: .25rem;
+    border-radius: 50%;
+    border: 1px solid var(--verdeLight);
+    box-shadow: 0 0 12px var(--verde);
+}
+
+#imgPerfil img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+#sobre .descricao {
+    text-align: center;
+    color: #ffeeff;
+    max-width: 600px;
+    margin-inline: auto;
+    line-height: 150%;
+    font-size: 18px;
+}
+
+section#skills {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.grid {
+    width: 100%;
+    display: grid;
+    grid-template-rows: repeat(2, .3fr);
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    padding: 4rem;    
+}
+
+.grid .frontend, .grid .backend,
+.grid .bancodedados, .grid .microcontrolador {
+    padding: 2rem;
+    transition: all .5s ease;
+}
+
+.grid .frontend {
+    border-bottom: 2px solid var(--verdeLight);
+    border-right: 2px solid var(--verdeLight);
+}
+
+.grid .frontend:hover {
+    transform: translate(-25px, -25px);
+    box-shadow: 24px 24px 48px var(--verde);
+}
+
+.grid .microcontrolador {
+    border-top: 2px solid var(--verdeLight);
+    border-left: 2px solid var(--verdeLight);
+}
+
+.grid .microcontrolador:hover {
+    transform: translate(25px, 25px);
+    box-shadow: -24px -24px 48px var(--verde);
+}
+
+.grid .bancodedados {
+    border-top: 2px solid var(--verdeLight);
+    border-right: 2px solid var(--verdeLight);
+}
+
+.grid .bancodedados:hover {
+    transform: translate(-25px, 25px);
+    box-shadow: 24px -24px 48px var(--verde);
+}
+
+.grid .backend {
+    border-left: 2px solid var(--verdeLight);
+    border-bottom: 2px solid var(--verdeLight);
+}
+
+.grid .backend:hover {
+    transform: translate(25px, -25px);
+    box-shadow: -24px 24px 48px var(--verde);
+}
+
+.grid .frontend, .grid .microcontrolador {
+    background-color: var(--pretoLight);
+
+}
+
+.grid .frontend p, .grid .backend p,
+.grid .bancodedados p , .grid .microcontrolador p {
+    color: #fff;
+    margin-bottom: 8px;
+}
+
+.grid .frontend div, .grid .backend div,
+.grid .bancodedados div , .grid .microcontrolador div {
+    
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+
+.html, .css, .js, .angularjs, .reactjs,
+.csharpe, .sqlServer, .arduino {
+    position: relative;
+}
+
+.html span, .css span, .js span, .angularjs span, .reactjs span,
+.csharpe span, .sqlServer span, .arduino span {
+    position: absolute;
+    background-color: var(--pretoLight);
+    border: 2px solid #333;
+    color: #fefe;
+    padding: 0.25rem;
+    top: -22px;
+    left: 36px;
+    width: max-content;
+    font-size: 12px;
+    display: none;
+}
+
+.html:hover span, .css:hover span, .js:hover span, 
+.angularjs:hover span, .reactjs:hover span, .csharpe:hover span,
+.sqlServer:hover span, .arduino:hover span {
+    display: block;
+    box-shadow: 0px 2px 4px var(--verde);
+}
+
+section#projetos {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 50px;
+    gap: 32px;
+    position: relative;
+}
+
+section#projetos > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 32px;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    perspective: 2500px;
+    width: 200px;
+    height: 300px;
+}
+
+.card span {
+    color: #fefe;
+    line-height: 150%;
+    font-size: 24px;
+    text-align: center;
+    display: block;
+}
+
+.card-wrapper {
+    border-radius: 8px;
+    width: 100%;
+    height: 100%;
+    border: 2px solid var(--verde);
+    transition: all 0.5s;
+    position: absolute;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.card:hover .card-wrapper {
+    transform: perspective(900px) translateY(-5%) rotateX(25deg) translateZ(0);
+    box-shadow: 2px 35px 32px -8px var(--verdeLight);
+    -webkit-box-shadow: 2px 35px 32px -8px var(--verdeLight);
+    -moz-box-shadow: 2px 35px 32px -8px var(--verdeLight);
+}
+
+.card-wrapper img {
+    width: 100%;
+    height: 80px;
+    object-fit: cover;
+}
+
+.card-wrapper h2, .card-wrapper p {
+    padding: .5rem;
+    color: #fefe;
+}
+
+.card-acesse-projeto {
+    width: 100%;
+    opacity: 0;
+    transition: all 0.5s;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    justify-content: end;
+    align-items: center;
+    position: absolute;
+    z-index: -1;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fefe;
+}
+
+
+.card-acesse-projeto div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    padding: .5rem;
+    margin-bottom: 4px;
+}
+
+.card-acesse-projeto div a {
+    text-decoration: none;
+    text-align: center;
+    color: #fefe;
+    background-color: var(--verde);
+    border-radius: 8px;
+    padding: .25rem .35rem;
+}
+
+.card:hover .card-acesse-projeto {
+    opacity: 1;
+    transform: translate3d(0%, -50%, 100px);
+}
+
+#maisProjetos {
+    text-decoration: none;
+    color: #fefe;
+
+    position: absolute;
+    top: 73%;
+}
+
+#contato {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 50px;
+}
+
+#contato h1 {
+    color: #fefefe;
+    font-weight: normal;
+    text-align: center;
+}
+
+.redes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    gap: 24px;
+    font-size: 24px;
+    color: #fefe;
+    margin-block: 2rem;
+}
+
+.redes a {
+    text-decoration: none;
+}
+
+.redes .ph.ph-github-logo {
+    color: #fefe;
+    font-size: 64px;
+    display: block;
+    border-radius: 12px;
+    padding: .25rem;
+    transition: all .4s;
+}
+
+.redes .ph.ph-linkedin-logo {
+    color: var(--azul);
+    font-size: 64px;
+    display: block;
+    border-radius: 12px;
+    padding: .25rem;
+    transition: all .4s;
+}
+
+.redes .ph.ph-whatsapp-logo {
+    color: var(--verdeLight);
+    font-size: 64px;
+    display: block;
+    border-radius: 12px;
+    padding: .25rem;
+    transition: all .4s;
+}
+
+.redes .ph.ph-instagram-logo {
+    color: pink;
+    font-size: 64px;
+    display: block;
+    border-radius: 12px;
+    padding: .25rem;
+    transition: all .4s;
+}
+
+.redes .ph.ph-github-logo:hover, .redes .ph.ph-linkedin-logo:hover,
+.redes .ph.ph-whatsapp-logo:hover, .redes .ph.ph-instagram-logo:hover {
+    transform: translateY(-15px);
+}
+
+.redes .ph.ph-github-logo:hover {
+    box-shadow: 0px 12px 8px #fefe;
+}
+
+.redes .ph.ph-linkedin-logo:hover {
+    box-shadow: 0px 12px 8px var(--azul);
+}
+
+.redes .ph.ph-whatsapp-logo:hover {
+    box-shadow: 0px 12px 8px var(--verdeLight);
+}
+
+.redes .ph.ph-instagram-logo:hover {
+    box-shadow: 0px 12px 8px pink;
+}
