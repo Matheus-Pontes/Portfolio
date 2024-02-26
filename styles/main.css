@@ -23,7 +23,8 @@ html {
 
 body {
     background: var(--verde);
-    background: linear-gradient(0deg, var(--verde) 3%, var(--pretoLight) 40%);
+    background: linear-gradient(0deg, var(--verde) 3%, var(--pretoLight) 30%);
+
 }
 
 .hidden {
