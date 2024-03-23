@@ -514,3 +514,48 @@ section#projetos > div {
 .redes .ph.ph-instagram-logo:hover {
     box-shadow: 0px 12px 8px pink;
 }
+
+/* Dialog */
+dialog {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: none;
+    background-color: var(--pretoLight);
+    border-radius: 24px;
+    padding: .55rem;
+}
+
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+dialog > div > * + * {
+    margin-top: .5rem;
+}
+
+dialog > div {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    align-items: end !important;
+}
+
+dialog > div > video {
+    width: 100%;
+    border-radius: 24px;
+}
+
+dialog > div > #fecharDialogVideo {
+    background-color: #b91c1c;
+    color: #fefe;
+    padding: .25rem .5rem;
+    border-radius: 12px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4px;
+    cursor: pointer;
+}

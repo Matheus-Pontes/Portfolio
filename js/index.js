@@ -12,3 +12,15 @@ const slide = new Swiper('.slide-secoes', {
         swiper: thumbnails,
     }
 });
+
+const btnOpenDialog = document.querySelector(".open-dialog-video");
+const modalDialogVideo = document.querySelector("#dialog-video") 
+const btnFecharDialog = document.querySelector("#fecharDialogVideo");
+
+btnOpenDialog.addEventListener("click", () => {
+    modalDialogVideo.showModal();
+});
+
+btnFecharDialog.addEventListener("click", () => {
+    modalDialogVideo.close();
+});
