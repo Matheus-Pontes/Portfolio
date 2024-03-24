@@ -538,6 +538,7 @@ dialog > div > * + * {
 dialog > div {
     display: flex;
     flex-direction: column;
+    gap: 12px;
     width: 600px;
     align-items: end !important;
 }
@@ -545,6 +546,7 @@ dialog > div {
 dialog > div > video {
     width: 100%;
     border-radius: 24px;
+    margin: auto;
 }
 
 dialog > div > #fecharDialogVideo {

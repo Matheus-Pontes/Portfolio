@@ -83,5 +83,9 @@
         padding: 1.5rem;
         border: none;
     }
+
+    dialog > div {
+        max-width: 300px;
+    }
 }
 
