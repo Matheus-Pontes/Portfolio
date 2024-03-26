@@ -37,6 +37,26 @@
         width: 100%;
     }
 
+    .card-wrapper {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .card-wrapper img {
+        width: 30%;
+        height: 100%;
+    }
+
+    .card-wrapper div { 
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card-acesse-projeto {
+        bottom: -10px;
+    }
+
     #maisProjetos {
         top: 1%;
     }
