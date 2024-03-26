@@ -23,10 +23,6 @@
     }
 
     /* Projetos */
-    #projetos {
-        padding: 2rem;
-    }    
-
     #projetos > div {
         height: 100%;
         width: 100%;
@@ -48,9 +44,10 @@
         height: 100%;
     }
 
-    .card-wrapper div { 
-        display: flex;
-        flex-direction: column;
+    .card-wrapper div p { 
+        overflow: hidden;
+        text-overflow: ellipsis;
+        text-align: start;
     }
 
     .card-acesse-projeto {

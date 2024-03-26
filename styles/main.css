@@ -373,6 +373,12 @@ section#projetos > div {
     object-fit: cover;
 }
 
+.card-wrapper div {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
 .card-wrapper h2, .card-wrapper p {
     padding: .5rem;
     color: #fefe;
