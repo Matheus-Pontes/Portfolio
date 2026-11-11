@@ -1,0 +1,164 @@
+@import 'swiper/css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --azul: #81d8f7;
+  --verdeDark: #015f43;
+  --verde: #00875f;
+  --verdeLight: #00b37e;
+  --preto: #09090a;
+  --pretoLight: #121214;
+}
+
+body {
+  background-color: var(--preto);
+  color: #f3f4f6;
+  font-family: 'Roboto', sans-serif;
+  overflow-x: hidden;
+}
+
+/* Ambient Background Mesh */
+.ambient-mesh {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.ambient-blob-1 {
+  position: absolute;
+  top: -10%;
+  left: 10%;
+  width: 50vw;
+  height: 50vw;
+  max-width: 650px;
+  max-height: 650px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(0, 179, 126, 0.14) 0%, rgba(0, 135, 95, 0.05) 50%, transparent 70%);
+  filter: blur(60px);
+  animation: floatSlow 18s ease-in-out infinite alternate;
+}
+
+.ambient-blob-2 {
+  position: absolute;
+  bottom: -10%;
+  right: 5%;
+  width: 55vw;
+  height: 55vw;
+  max-width: 700px;
+  max-height: 700px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(129, 216, 247, 0.1) 0%, rgba(1, 95, 67, 0.07) 50%, transparent 70%);
+  filter: blur(70px);
+  animation: floatSlow 22s ease-in-out infinite alternate-reverse;
+}
+
+@keyframes floatSlow {
+  0% {
+    transform: translate(0, 0) scale(1);
+  }
+  50% {
+    transform: translate(30px, -20px) scale(1.08);
+  }
+  100% {
+    transform: translate(-20px, 25px) scale(0.95);
+  }
+}
+
+/* Typing / Glow Name Animation */
+.typing-name {
+  -webkit-text-stroke: 0.1vw #fefefe;
+  animation: animaNome 6s linear infinite;
+}
+
+@keyframes animaNome {
+  0%, 40%, 100% {
+    color: var(--preto);
+  }
+  70%, 90% {
+    color: #fefefe;
+  }
+}
+
+/* 3D Card Hover Effects */
+.card-perspective {
+  perspective: 2000px;
+}
+
+.card-inner {
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s ease, border-color 0.4s ease;
+}
+
+.card-perspective:hover .card-inner {
+  transform: perspective(900px) translateY(-6px) rotateX(4deg);
+  box-shadow: 0 20px 35px -10px rgba(0, 179, 126, 0.25);
+}
+
+/* Apple-style Glassmorphism */
+.apple-glass {
+  background: rgba(18, 18, 22, 0.7);
+  backdrop-filter: blur(28px) saturate(190%);
+  -webkit-backdrop-filter: blur(28px) saturate(190%);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: inset 0 1px 1px 0 rgba(255, 255, 255, 0.2), 0 20px 50px -10px rgba(0, 0, 0, 0.7);
+}
+
+.apple-glass-pill {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: inset 0 1px 1px 0 rgba(255, 255, 255, 0.3), 0 4px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Swiper custom height */
+.swiper, .swiper-wrapper {
+  height: 100% !important;
+  width: 100% !important;
+}
+
+.swiper-slide {
+  height: 100% !important;
+  width: 100% !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Custom Scrollbar for inner scrollable sections */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(18, 18, 20, 0.6);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 179, 126, 0.4);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 179, 126, 0.8);
+}
+
+/* Accessibility: Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .typing-name {
+    animation: none !important;
+    color: #fefefe !important;
+    -webkit-text-stroke: 0 !important;
+  }
+  .card-perspective:hover .card-inner {
+    transform: none !important;
+  }
+}
