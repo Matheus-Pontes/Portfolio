@@ -1,0 +1,108 @@
+@media (max-width: 748px) {
+    #sobre .perfil {
+       flex-direction: column;
+    }
+
+    #sobre .perfil h1 {
+        font-size: 32px;
+    }
+    
+    #sobre .descricao {
+        font-size: 16px;
+    }
+    
+    .slide-thumbnail {
+        width: 100vw !important;
+    }
+    .slide-thumbnail .swiper-wrapper {
+        gap: 8px;
+    }
+
+    .swiper-slide.swiper-slide-visible.swiper-slide-fully-visible {
+        margin-right: 0px !important;
+    }
+
+    /* Projetos */
+    #projetos > div {
+        height: 100%;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    #projetos > div > .card {
+        width: 100%;
+    }
+
+    .card-wrapper {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .card-wrapper img {
+        width: 30%;
+        height: 100%;
+    }
+
+    .card-wrapper div p { 
+        overflow: hidden;
+        text-overflow: ellipsis;
+        text-align: start;
+    }
+
+    .card-acesse-projeto {
+        bottom: -10px;
+    }
+
+    #maisProjetos {
+        top: 1%;
+    }
+
+    /* Skills */
+    .grid {
+       display: flex;
+       flex-direction: column;
+    }
+
+    .grid img {
+        width: 50%;
+    }
+
+    .grid .frontend:hover {
+        transform: scale(1.1) translate(0px, 0);
+        box-shadow: 4px 4px 48px var(--verde);
+    }
+
+    .grid .bancodedados {
+        background-color: var(--pretoLight);
+    }
+
+    .grid .backend:hover {
+        transform: scale(1.1) translate(0px, 0);
+        box-shadow: 4px 4px 48px var(--verde);
+    }
+    
+    .grid .bancodedados:hover {
+        transform: scale(1.1) translate(0px, 0);
+        box-shadow: 4px 4px 48px var(--verde);
+    }
+
+    .grid .microcontrolador {
+        background-color: var(--preto);
+    }
+
+    .grid .microcontrolador:hover {
+        transform: scale(1.1) translate(0px, 0);
+        box-shadow: 4px 4px 48px var(--verde);
+    }
+
+    .grid .frontend, .grid .backend, .grid .bancodedados, .grid .microcontrolador {
+        padding: 1.5rem;
+        border: none;
+    }
+
+    dialog > div {
+        max-width: 300px;
+    }
+}
+
